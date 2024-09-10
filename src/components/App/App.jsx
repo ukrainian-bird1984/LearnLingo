@@ -1,17 +1,26 @@
 import { useState } from 'react';
 import { lazy } from 'react';
 
-const FavoritesPage = lazy(() => import("../../pages/FavoritesPage"));
-const HomePage = lazy(() => import("../../pages/HomePage"));
-const TeachersPage = lazy(() => import("../../pages/TeachersPage"));
+const HomePage = lazy(() => import("../pages/HomePage"));
+const TeachersPage = lazy(() => import("../pages/TeachersPage"));
+const FavoritesPage = lazy(() => import("../pages/FavoritesPage"));
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    
-  )
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
