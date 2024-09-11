@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { lazy } from 'react';
 
-const HomePage = lazy(() => import("../pages/HomePage"));
-const TeachersPage = lazy(() => import("../pages/TeachersPage"));
-const FavoritesPage = lazy(() => import("../pages/FavoritesPage"));
+const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
+const TeachersPage = lazy(() => import("../../pages/TeachersPage/TeachersPage"));
+const FavoritesPage = lazy(() => import("../../pages/FavoritesPage/FavoritesPage"));
 
 
 function App() {
