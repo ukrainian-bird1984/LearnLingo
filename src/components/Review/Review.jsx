@@ -14,3 +14,5 @@ export default function Review = () {
     </div>
   );
 }
+
+export default Review;
