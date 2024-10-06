@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Review = () {
+function Review = () {
     return (
     <div>
         <h2>32,000 +</h2>
